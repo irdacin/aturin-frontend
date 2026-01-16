@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: aturin-frontend
-        image: aturin-frontend:uas
-        imagePullPolicy: Never
+        image: ghcr.io/irdacin/aturin-frontend:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
         resources:
