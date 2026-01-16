@@ -23,3 +23,14 @@ spec:
             cpu: "50m"
           limits:
             cpu: "250m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aturin-frontend-service
+spec:
+  selector:
+    app: aturin-frontend
+  ports:
+    - protocol: TCP
+      port: 80
